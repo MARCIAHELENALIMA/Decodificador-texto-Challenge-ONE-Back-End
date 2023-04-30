@@ -1,0 +1,246 @@
+body {
+  background-color: #F3F5FC;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.digite {
+  flex-basis: 500px;
+  flex-grow: 1;
+}
+
+.texto {
+  box-sizing: border-box;
+  display: block;
+  width: 80%;
+  height: 355px;
+  resize: none;
+  margin: 20px auto;
+  padding: 24px 10px 24px 70px;
+  font-family: sans-serif;
+  font-size: 1.7rem;
+  color: #0A3871;
+  background-color: #F3F5FC;
+  border: 0;
+  outline: 0;
+}
+
+.texto::placeholder {
+  color: #0A3871;
+}
+
+.img-exclamacao { 
+  width: 20px;
+  margin-left: 70px;
+  margin-right: 5px;
+  filter: invert(22%) sepia(2%) saturate(4186%) hue-rotate(169deg) brightness(91%) contrast(64%);
+}
+
+.informacao {
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  color: #495057;
+  cursor: default;
+}
+
+.bnt-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto 30px auto;
+}
+
+.bnt-criptografar, .bnt-descriptografar, .bnt-copiar {
+  padding: 10px;
+  height: 50px;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  border: 1px solid #0A3871;
+  transition: 1s background-color;
+}
+
+.bnt-criptografar {
+  width: 50%;
+  margin: 0 30px 0 70px;
+  background-color: #0A3871;
+  color: white;
+  cursor: pointer;
+}
+
+.bnt-criptografar:hover {
+  background-color: #07264d;
+}
+
+.bnt-descriptografar {
+  width: 50%;
+  background-color: #D8DFE8;
+  color: #0A3871;
+  cursor: pointer;
+}
+
+.bnt-descriptografar:hover {
+  background-color: #bcc5d1;
+}
+
+.resultado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 300px;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resultado img {
+  width: 280px;
+}
+
+.resultado h3 {
+  font-size: 1.3rem;
+  color: #343A40;
+}
+
+.resultado p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+}
+
+.txt-resultado {
+  width: 280px;
+  flex-grow: 1;
+  height: 420px;
+  border: 0;
+  resize: none;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2;
+  color: #495057;
+  cursor: default;
+  outline: 0;
+}
+
+.txt-resultado::selection, .texto::selection, p::selection, h3::selection {
+  background-color: #0A3871;
+  color: white;
+}
+
+.bnt-copiar {
+  flex-grow: 1;
+  color: #07264d;
+  background-color: white;
+  cursor: pointer;
+}
+
+.bnt-copiar:hover {
+  background-color: rgb(218, 218, 218);
+}
+
+.msg-erro {
+  width: 300px;
+  border: 1px solid #07264d;
+  border-radius: 20px;
+  color: #343A40;
+  text-align: center;
+}
+
+.msg-erro img {
+  width: 2rem;
+}
+
+.msg-erro p {
+  font-size: 1.3rem;
+  font-weight: 1.6;
+}
+
+.msg-erro button {
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  border: #07264d 1px solid;
+  background-color: #07264d;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 1s background-color;
+}
+
+.msg-erro button:hover {
+  background-color: #041933;
+}
+
+footer {
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
+footer img {
+  width: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+
+  .texto {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .informacao {
+    width: 90%;
+  }
+
+  .img-exclamacao {
+    margin: 0 10px 0 0;
+  }
+
+  .bnt-container {
+    width: 90%;
+  }
+
+  .bnt-criptografar {
+    margin: 0 10px 0 0;
+  }
+
+  .resultado {
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-basis: 10px;
+  }
+
+  .txt-resultado {
+    width: 90%;
+  }
+
+  .bnt-copiar {
+    min-width: 250px;
+    max-width: 90%;
+  }
+
+  .visibilidade img {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .bnt-copiar {
+    margin-top: 10px;
+  }
+}

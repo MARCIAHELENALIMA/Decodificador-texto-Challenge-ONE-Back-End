@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="digite">
+            <img src="images/logo.png" class="img-logo">
+            <dialog class="msg-erro">
+                <img src="images/exclamation-circle-fill.svg">
+                <p>Texto inválido, digite apenas letras minúsculas e sem acento</p>
+                <button class="bnt-ok">OK</button>
+            </dialog>
+
+            <textarea class="texto" placeholder="Digite seu texto..."></textarea>
+
+            <p class="informacao"><img src="images/exclamation-circle-fill.svg" class="img-exclamacao"> Apenas letras minúsculas e sem acento.</p>
+
+            <div class="bnt-container">
+                <button class="bnt-criptografar">Criptografar</button>
+                <button class="bnt-descriptografar">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="resultado">
+            <textarea class="txt-resultado" readonly></textarea>
+
+            <div class="visibilidade">
+                <img src="images/pessoa.svg">
+
+                <h3>Nehuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <button class="bnt-copiar">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Márcia Helena - 2023</p>
+        <p>
+            <a href="https://github.com/MARCIAHELENALIMA" target="_blank"><img src="images/github.svg"></a>
+            <a href="https://www.linkedin.com/in/marciahelenalima/" target="_blank"><img src="images/linkedin.svg"></a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
