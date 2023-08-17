@@ -1,5 +1,9 @@
 # DECODIFICADOR E CODIFICADOR DE TEXTO
 
+<p align="center">
+  <img src="https://github.com/MARCIAHELENALIMA/Decodificador-texto-Challenge-ONE-Back-End/blob/main/descodificador.gif" alt="decodificador-texto" width="400">
+</p>
+
 Decodificador e decodificador de texto em HTML, CSS e JavaScript. A aplicação criptografa textos, assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.
 
 As "chaves" de criptografia que usaremos são: A letra "e" é convertida para "enter" A letra "i" é convertida para "imes" A letra "a" é convertida para "ai" A letra "o" é convertida para "ober" A letra "u" é convertida para "ufat"
